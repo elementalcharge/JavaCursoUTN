@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.utn.controlador.CuentaControlador"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.utn.modelo.CuentaCorriente"/>
+<fullyQualifiedTypeName name="com.utn.modelo.CajaAhorro"/>
+<fullyQualifiedTypeName name="com.utn.controlador.EmpleadoControlador"/>
+<fullyQualifiedTypeName name="com.utn.modelo.Empleado"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,10 @@
+package com.utn.modelo;
+
+public class CuentaCorriente {
+	private double saldo=5000.0;
+
+	public double getSaldo() {
+		return saldo;
+	}
+	
+}

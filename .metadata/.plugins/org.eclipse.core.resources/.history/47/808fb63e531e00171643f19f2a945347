@@ -1,0 +1,10 @@
+package com.utn.modelo;
+
+public class Empleado {
+private String nombre;
+private String apellido;
+private int DNI;
+private CuentaCorriente cc;
+private CajaAhorro ca;
+
+}

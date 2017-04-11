@@ -1,0 +1,23 @@
+package com.utn.controlador;
+
+import com.utn.modelo.CajaAhorro;
+
+public class CuentaControlador {
+	//atributo global privado
+	private CajaAhorro ca;
+	private void inicializador() {
+		this.ca = new CajaAhorro();
+
+	}
+	public void obtenerSaldo() {
+		CajaAhorro ca= new CajaAhorro();
+		// TODO Auto-generated method stub
+		ca.setSaldo(1000);
+		System.out.print("su saldo actual es: " + ca.getSaldo()+ " pesos");
+	}
+	public void retiroDinero(double dinero) {
+		CajaAhorro ca = new CajaAhorro();
+		double resultado =ca.getSaldo()- dinero;
+		System.out.print("su saldo actual es: " + resultado+ " pesos");
+	}
+}
