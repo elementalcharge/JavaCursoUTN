@@ -2,9 +2,25 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.utn.controlador.CuentaControlador"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.utn.modelo.CuentaCorriente"/>
 <fullyQualifiedTypeName name="com.utn.modelo.CajaAhorro"/>
 <fullyQualifiedTypeName name="com.utn.controlador.EmpleadoControlador"/>
 <fullyQualifiedTypeName name="com.utn.modelo.Empleado"/>
+<fullyQualifiedTypeName name="vehiculo.modelo.Frenos"/>
+<fullyQualifiedTypeName name="vehiculo.modelo.Electronica"/>
+<fullyQualifiedTypeName name="vehiculo.modelo.TipoCaja"/>
+<fullyQualifiedTypeName name="vehiculo.modelo.TipoCombustible"/>
+<fullyQualifiedTypeName name="vehiculo.modelo.Modulo"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="vehiculo.modelo.Motor"/>
+<fullyQualifiedTypeName name="vehiculo.modelo.Combustible"/>
+<fullyQualifiedTypeName name="vehiculo.enumeradores.TipoCombustible"/>
+<fullyQualifiedTypeName name="vehiculo.modelo.Auto"/>
+<fullyQualifiedTypeName name="vehiculo.modelo.Rueda"/>
+<fullyQualifiedTypeName name="vehiculo.enumeradores.RuedaTamano"/>
+<fullyQualifiedTypeName name="vehiculo.enumeradores.Neumatico"/>
+<fullyQualifiedTypeName name="vehiculo.modelo.Caja"/>
+<fullyQualifiedTypeName name="vehiculo.enumeradores.TipoCaja"/>
+<fullyQualifiedTypeName name="vehiculo.enumeradores.Modulo"/>
+<fullyQualifiedTypeName name="vehiculo.enumeradores.Frenos"/>
 </qualifiedTypeNameHistroy>
