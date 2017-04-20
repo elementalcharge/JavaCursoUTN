@@ -11,7 +11,6 @@
 <fullyQualifiedTypeName name="vehiculo.modelo.TipoCaja"/>
 <fullyQualifiedTypeName name="vehiculo.modelo.TipoCombustible"/>
 <fullyQualifiedTypeName name="vehiculo.modelo.Modulo"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="vehiculo.modelo.Motor"/>
 <fullyQualifiedTypeName name="vehiculo.modelo.Combustible"/>
 <fullyQualifiedTypeName name="vehiculo.enumeradores.TipoCombustible"/>
@@ -23,4 +22,8 @@
 <fullyQualifiedTypeName name="vehiculo.enumeradores.TipoCaja"/>
 <fullyQualifiedTypeName name="vehiculo.enumeradores.Modulo"/>
 <fullyQualifiedTypeName name="vehiculo.enumeradores.Frenos"/>
+<fullyQualifiedTypeName name="com.utn.enumerador.Typo"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.utn.modelo.Animal"/>
+<fullyQualifiedTypeName name="com.utn.modelo.Medico"/>
 </qualifiedTypeNameHistroy>
