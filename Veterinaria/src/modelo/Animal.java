@@ -1,6 +1,6 @@
-package com.utn.modelo;
+package modelo;
 
-import com.utn.enumerador.Typo;
+import enumerador.Typo;
 
 public class Animal {
 
@@ -9,7 +9,7 @@ public class Animal {
 	String raza;
 	int edad;
 	String causaDeAtencion;
-	String medicamento;
+	Revision resultadoDeRevision;
 	public Animal(Typo tipo, String nombre, String raza, int edad, String causaDeAtencion) {
 		this.tipo = tipo;
 		this.nombre = nombre;
@@ -17,11 +17,11 @@ public class Animal {
 		this.edad = edad;
 		this.causaDeAtencion = causaDeAtencion;
 	}
-	public String getMedicamento() {
-		return medicamento;
+	public Revision getResultadoDeRevision() {
+		return resultadoDeRevision;
 	}
-	public void setMedicamento(String medicamento) {
-		this.medicamento = medicamento;
+	public void setResultadoDeRevision(Revision resultadoDeRevision) {
+		this.resultadoDeRevision = resultadoDeRevision;
 	}
 	public Typo getTipo() {
 		return tipo;
