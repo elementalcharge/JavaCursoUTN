@@ -29,7 +29,7 @@ public class Veterinaria {
 		return medicos[idDelMedico];
 	}
 	
-	private void nuevoDia(){
+	public void nuevoDia(){
 		atendidosVeterinaria=0;
 		for (Medico medico : medicos) {
 			medico.nuevoDia();

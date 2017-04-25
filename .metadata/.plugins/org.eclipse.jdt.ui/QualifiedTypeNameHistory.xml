@@ -23,7 +23,15 @@
 <fullyQualifiedTypeName name="vehiculo.enumeradores.Modulo"/>
 <fullyQualifiedTypeName name="vehiculo.enumeradores.Frenos"/>
 <fullyQualifiedTypeName name="com.utn.enumerador.Typo"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.utn.modelo.Animal"/>
 <fullyQualifiedTypeName name="com.utn.modelo.Medico"/>
+<fullyQualifiedTypeName name="encapsulamiento.Docente"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="encapsulamiento.Alumno"/>
+<fullyQualifiedTypeName name="encapsulamiento.Aula"/>
+<fullyQualifiedTypeName name="encapsulamiento.TypoAula"/>
+<fullyQualifiedTypeName name="encapsulamiento.Ejemplos"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="encapsulamiento.Materia"/>
 </qualifiedTypeNameHistroy>
