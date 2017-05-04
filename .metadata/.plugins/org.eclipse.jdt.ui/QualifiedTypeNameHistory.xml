@@ -32,12 +32,23 @@
 <fullyQualifiedTypeName name="encapsulamiento.Ejemplos"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="encapsulamiento.Materia"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="modelo.Auto"/>
 <fullyQualifiedTypeName name="modelo.Moto"/>
 <fullyQualifiedTypeName name="modelo.Camion"/>
 <fullyQualifiedTypeName name="modelo.Vehiculo"/>
 <fullyQualifiedTypeName name="controler.ControladorDeVehiculo"/>
+<fullyQualifiedTypeName name="modelo.Cono"/>
+<fullyQualifiedTypeName name="modelo.VasoDeCuarto"/>
+<fullyQualifiedTypeName name="modelo.PoteDeKilo"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="modelo.Cajero"/>
+<fullyQualifiedTypeName name="modelo.Plus"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="controlador.Cajero"/>
+<fullyQualifiedTypeName name="java.awt.HeadlessException"/>
+<fullyQualifiedTypeName name="controlador.Heladeria"/>
+<fullyQualifiedTypeName name="modelo.Repartidor"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="modelo.Pedidos"/>
 </qualifiedTypeNameHistroy>
