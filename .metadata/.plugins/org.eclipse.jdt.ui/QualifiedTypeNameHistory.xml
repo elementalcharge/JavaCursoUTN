@@ -44,11 +44,18 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="modelo.Cajero"/>
 <fullyQualifiedTypeName name="modelo.Plus"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="controlador.Cajero"/>
 <fullyQualifiedTypeName name="java.awt.HeadlessException"/>
 <fullyQualifiedTypeName name="controlador.Heladeria"/>
 <fullyQualifiedTypeName name="modelo.Repartidor"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="modelo.Pedidos"/>
+<fullyQualifiedTypeName name="modelo.Mamifero"/>
+<fullyQualifiedTypeName name="controlador.HumanoControlador"/>
+<fullyQualifiedTypeName name="modelo.humano.Humano"/>
+<fullyQualifiedTypeName name="modelo.humano.Latino"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalPopupMenuSeparatorUI"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="controlador.MiExcepcion"/>
 </qualifiedTypeNameHistroy>
