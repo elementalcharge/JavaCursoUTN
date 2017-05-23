@@ -2,7 +2,7 @@ package modelo;
 
 import enumerador.Typo;
 
-public class Animal {
+public abstract class Animal  {
 
 	Typo tipo;
 	String nombre;

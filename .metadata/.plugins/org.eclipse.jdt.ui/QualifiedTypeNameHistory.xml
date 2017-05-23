@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.utn.modelo.CajaAhorro"/>
-<fullyQualifiedTypeName name="com.utn.controlador.EmpleadoControlador"/>
-<fullyQualifiedTypeName name="com.utn.modelo.Empleado"/>
-<fullyQualifiedTypeName name="vehiculo.modelo.Frenos"/>
-<fullyQualifiedTypeName name="vehiculo.modelo.Electronica"/>
 <fullyQualifiedTypeName name="vehiculo.modelo.TipoCaja"/>
 <fullyQualifiedTypeName name="vehiculo.modelo.TipoCombustible"/>
 <fullyQualifiedTypeName name="vehiculo.modelo.Modulo"/>
@@ -54,10 +49,15 @@
 <fullyQualifiedTypeName name="controlador.MiExcepcion"/>
 <fullyQualifiedTypeName name="modelo.Vehiculo"/>
 <fullyQualifiedTypeName name="modelo.interfaces.Ivehiculo"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="modelo.Chofer"/>
 <fullyQualifiedTypeName name="interfaces.Itransporte"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="interfaces.Icolectivo"/>
+<fullyQualifiedTypeName name="com.modelo.Animal"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="modelo.Medico"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="modelo.Animal"/>
+<fullyQualifiedTypeName name="com.modelo.Motor"/>
+<fullyQualifiedTypeName name="com.modelo.Gas"/>
 </qualifiedTypeNameHistroy>
