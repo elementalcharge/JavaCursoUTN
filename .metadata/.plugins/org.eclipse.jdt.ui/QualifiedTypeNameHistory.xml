@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="modelo.Animal"/>
-<fullyQualifiedTypeName name="com.modelo.Motor"/>
-<fullyQualifiedTypeName name="com.modelo.Gas"/>
-<fullyQualifiedTypeName name="com.modelo.IPersona"/>
-<fullyQualifiedTypeName name="com.modelo.Habitacion"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.lang.NegativeArraySizeException"/>
-<fullyQualifiedTypeName name="controlador.PlantasElectricasControlers"/>
-<fullyQualifiedTypeName name="modelo.PlantaDeMT"/>
-<fullyQualifiedTypeName name="interfaces.ConsumidorDeElectricidad"/>
-<fullyQualifiedTypeName name="modelo.Fabrica"/>
 <fullyQualifiedTypeName name="modelo.PlantaDeBT"/>
 <fullyQualifiedTypeName name="interfaces.Respaldador"/>
 <fullyQualifiedTypeName name="modelo.Vivienda"/>
@@ -22,9 +10,7 @@
 <fullyQualifiedTypeName name="com.enumerador.Ingrediente"/>
 <fullyQualifiedTypeName name="com.controlador.Embazador"/>
 <fullyQualifiedTypeName name="com.abtractos.Bebida"/>
-<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="com.utn.excepctions.ExcepcionDesControlada"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="src.CuentaControlador"/>
 <fullyQualifiedTypeName name="avanzadoClase1.com.utn.modelo.MyGenerico"/>
 <fullyQualifiedTypeName name="avanzadoClase1.com.utn.controlador.AdultControlador"/>
@@ -32,11 +18,9 @@
 <fullyQualifiedTypeName name="avanzadoClase1.com.utn.controlador.ninoControlador"/>
 <fullyQualifiedTypeName name="avanzadoClase1.com.utn.controlador.AdolecenteControlador"/>
 <fullyQualifiedTypeName name="avanzadoClase1.com.utn.modelo.Adolecente"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="avanzadoClase1.com.utn.modelo.Persona"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="avanzadoClase1.com.utn.modelo.Accion"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="avanzadoClase1.com.utn.modelo.Nino"/>
 <fullyQualifiedTypeName name="TVehiculo"/>
 <fullyQualifiedTypeName name="com.utn.modelo.Ivehiculo"/>
@@ -56,8 +40,24 @@
 <fullyQualifiedTypeName name="com.utn.controlador.SerializadorControlador"/>
 <fullyQualifiedTypeName name="com.utn.modelo.Vehiculo"/>
 <fullyQualifiedTypeName name="com.utn.modelo.VehiculoElectrico"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="java.sql.DriverManager"/>
-<fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.Statement"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="utn.com.exceptions.MyRuntimeEx"/>
+<fullyQualifiedTypeName name="utn.com.exceptions.MyExeption"/>
+<fullyQualifiedTypeName name="utn.com.exceptions.ExceptionController"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="utn.modelo.Iparty"/>
+<fullyQualifiedTypeName name="conexion.ConexionMysql"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="utn.modelo.Aventurero"/>
+<fullyQualifiedTypeName name="utn.com.exceptions.EscriboLog"/>
 </qualifiedTypeNameHistroy>
