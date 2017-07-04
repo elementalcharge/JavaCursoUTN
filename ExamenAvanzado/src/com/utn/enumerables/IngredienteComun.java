@@ -1,0 +1,18 @@
+package com.utn.enumerables;
+
+public enum IngredienteComun {
+
+	ACIDOCITRICO,
+	CAFEINA,
+	AZUCAR,
+	AGUA,
+	JUGODELIMON,
+	VAINILLA,
+	CARAMELO,ALCOHOL,
+	ACEITE,
+	NUEZMOZCADA,
+	CILANDRO,
+	NEROLI,
+	CANELA,
+	
+}

@@ -20,3 +20,16 @@ public class Test {
 	}
 
 }
+/*
+ * PreparedStatement ps = (PreparedStatement) ConexionMysql.conectoMysql()
+ 
+.prepareStatement("select * from alumnox where id = ?");
+ps.setInt(1, identificador);
+
+// guardamos la tabla que viene x la base de datos
+ResultSet rs = ps.executeQuery();
+
+// Retorno el alumno cargado de la base
+return new Persona(rs.getInt("id"), rs.getString("nombre"), rs.getString("apellido"),
+rs.getString("correo"));
+*/
