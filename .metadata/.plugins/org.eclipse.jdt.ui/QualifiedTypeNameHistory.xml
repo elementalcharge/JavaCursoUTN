@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
-<fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
-<fullyQualifiedTypeName name="com.utn.controlador.SerializadorControlador"/>
-<fullyQualifiedTypeName name="com.utn.modelo.Vehiculo"/>
-<fullyQualifiedTypeName name="com.utn.modelo.VehiculoElectrico"/>
-<fullyQualifiedTypeName name="com.mysql.jdbc.Statement"/>
-<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="utn.com.exceptions.MyRuntimeEx"/>
 <fullyQualifiedTypeName name="utn.com.exceptions.MyExeption"/>
 <fullyQualifiedTypeName name="utn.com.exceptions.ExceptionController"/>
@@ -58,6 +51,13 @@
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Field"/>
 <fullyQualifiedTypeName name="clase6.lib.db.MySQLTransaction"/>
+<fullyQualifiedTypeName name="java.lang.annotation.Target"/>
+<fullyQualifiedTypeName name="java.lang.annotation.ElementType"/>
+<fullyQualifiedTypeName name="java.lang.annotation.RetentionPolicy"/>
+<fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Field"/>
+<fullyQualifiedTypeName name="java.awt.event.ItemEvent"/>
+<fullyQualifiedTypeName name="clase9.interfaces.Validacion"/>
 </qualifiedTypeNameHistroy>
