@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="utn.com.exceptions.MyRuntimeEx"/>
-<fullyQualifiedTypeName name="utn.com.exceptions.MyExeption"/>
 <fullyQualifiedTypeName name="utn.com.exceptions.ExceptionController"/>
 <fullyQualifiedTypeName name="utn.modelo.Iparty"/>
 <fullyQualifiedTypeName name="conexion.ConexionMysql"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
 <fullyQualifiedTypeName name="java.awt.event.ItemEvent"/>
 <fullyQualifiedTypeName name="clase9.interfaces.Validacion"/>
+<fullyQualifiedTypeName name="clase10.modelo.FabricaYogur"/>
+<fullyQualifiedTypeName name="clase10.modelo.FabricaDeDulceDeLeche"/>
 </qualifiedTypeNameHistroy>
