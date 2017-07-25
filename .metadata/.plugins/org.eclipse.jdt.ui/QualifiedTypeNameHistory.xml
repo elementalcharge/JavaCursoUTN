@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="utn.com.exceptions.ExceptionController"/>
-<fullyQualifiedTypeName name="utn.modelo.Iparty"/>
-<fullyQualifiedTypeName name="conexion.ConexionMysql"/>
-<fullyQualifiedTypeName name="utn.modelo.Aventurero"/>
-<fullyQualifiedTypeName name="utn.com.exceptions.EscriboLog"/>
-<fullyQualifiedTypeName name="utn.com.coneccion.ConexionMysql"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="javax.swing.text.AbstractDocument.LeafElement"/>
 <fullyQualifiedTypeName name="utn.com.coneccion.Lenguajes"/>
 <fullyQualifiedTypeName name="com.utn.dao.Auto"/>
@@ -30,7 +22,6 @@
 <fullyQualifiedTypeName name="java.lang.reflect.Parameter"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 <fullyQualifiedTypeName name="com.utn.vista.DBController"/>
@@ -43,12 +34,10 @@
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="clase6.exceptions.MyException"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.Class"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="clase6.lib.db.MySQLTransaction"/>
 <fullyQualifiedTypeName name="java.lang.annotation.Target"/>
 <fullyQualifiedTypeName name="java.lang.annotation.ElementType"/>
@@ -60,4 +49,15 @@
 <fullyQualifiedTypeName name="clase9.interfaces.Validacion"/>
 <fullyQualifiedTypeName name="clase10.modelo.FabricaYogur"/>
 <fullyQualifiedTypeName name="clase10.modelo.FabricaDeDulceDeLeche"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="tp2.modelo.Contacto"/>
+<fullyQualifiedTypeName name="tp2.enumerables.Bebida"/>
+<fullyQualifiedTypeName name="tp2.controlador.Tienda"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="tp2.controlador.StockController"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="tp2.modelo.Factura"/>
+<fullyQualifiedTypeName name="tp2.modelo.Cajero"/>
 </qualifiedTypeNameHistroy>
