@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 
 import com.mysql.jdbc.Connection;
 
+import tp2.modelo.utils.PropertiesUtils;
+
 public class ConexionBDMySQL {
 
 	
@@ -45,7 +47,7 @@ public class ConexionBDMySQL {
 		
 		try {
 			//Class.forName("com.mysql.jbc.Driver");//estaria de forma estatica en el sistema
-			conexion=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
+			conexion=(Connection)DriverManager.getConnection(PropertiesUtils.getInstance().getProperty("mysql.url"),"root","");
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();

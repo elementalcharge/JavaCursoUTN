@@ -2,18 +2,18 @@ package tp2.modelo;
 
 public class Hamburguesa {
 	private int HAMBURGUESAS;
-	private int quesos;
+	private int QUESOS;
 	private int panConCentenos;
 	private int panSinCentenos;
 	private int huevos;
-	private int cebollas;
-	private int ketchup;
-	private int mayonesa;
-	private int moztasa;
-	private int papas;
+	private int CEBOLLA;
+	private int KETCHUPS;
+	private int MAYONESA;
+	private int MOSTAZA;
+	private int FRENCHYS;
 	private int juegueteMujer;
 	private int jugueteVaron;
-	private int tamanoBebida;
+	private int gaseosa;
 	private int ginis;
 	
 	
@@ -21,18 +21,18 @@ public class Hamburguesa {
 	public Hamburguesa() {
 		super();
 		HAMBURGUESAS=0;
-		quesos=0;
+		QUESOS=0;
 		panConCentenos=0;
 		 panSinCentenos=0;
 		huevos=0;
-		cebollas=0;
-		ketchup=0;
-		mayonesa=0;
-		moztasa=0;
-		papas=0;
+		CEBOLLA=0;
+		KETCHUPS=0;
+		MAYONESA=0;
+		MOSTAZA=0;
+		FRENCHYS=0;
 		juegueteMujer=0;
 		jugueteVaron=0;
-		tamanoBebida=0;
+		gaseosa=0;
 		ginis=0;
 	}
 	public int getGinis() {
@@ -43,58 +43,58 @@ public class Hamburguesa {
 	}
 	@Override
 	public String toString() {
-		return "Hamburguesa [HAMBURGUESAS=" + HAMBURGUESAS + ", quesos=" + quesos + ", panConCentenos=" + panConCentenos
-				+ ", panSinCentenos=" + panSinCentenos + ", huevos=" + huevos + ", cebollas=" + cebollas + ", ketchup="
-				+ ketchup + ", mayonesa=" + mayonesa + ", moztasa=" + moztasa + ", papas=" + papas + ", juegueteMujer="
-				+ juegueteMujer + ", jugueteVaron=" + jugueteVaron + ", tamanoBebida=" + tamanoBebida + ", ginis="
+		return "Hamburguesa [HAMBURGUESAS=" + HAMBURGUESAS + ", quesos=" + QUESOS + ", panConCentenos=" + panConCentenos
+				+ ", panSinCentenos=" + panSinCentenos + ", huevos=" + huevos + ", cebollas=" + CEBOLLA + ", ketchup="
+				+ KETCHUPS + ", mayonesa=" + MAYONESA + ", moztasa=" + MOSTAZA + ", papas=" + FRENCHYS + ", juegueteMujer="
+				+ juegueteMujer + ", jugueteVaron=" + jugueteVaron + ", tamanoBebida=" + gaseosa + ", ginis="
 				+ ginis + "]";
 	}
 	public Hamburguesa(int hamburguesas, int quesos, int panConCentenos, int panSinCentenos, int huevos, int cebollas,
 			int ketchup, int mayonesa, int moztasa, int papas, int juegueteMujer, int jugueteVaron, int tamanoBebida) {
 		super();
 		this.HAMBURGUESAS = hamburguesas;
-		this.quesos = quesos;
+		this.QUESOS = quesos;
 		this.panConCentenos = panConCentenos;
 		this.panSinCentenos = panSinCentenos;
 		this.huevos = huevos;
-		this.cebollas = cebollas;
-		this.ketchup = ketchup;
-		this.mayonesa = mayonesa;
-		this.moztasa = moztasa;
-		this.papas = papas;
+		this.CEBOLLA = cebollas;
+		this.KETCHUPS = ketchup;
+		this.MAYONESA = mayonesa;
+		this.MOSTAZA = moztasa;
+		this.FRENCHYS = papas;
 		this.juegueteMujer = juegueteMujer;
 		this.jugueteVaron = jugueteVaron;
-		this.tamanoBebida = tamanoBebida;
+		this.gaseosa = tamanoBebida;
 	}
 	public int getTamanoBebida() {
-		return tamanoBebida;
+		return gaseosa;
 	}
 	public void setTamanoBebida(int tamanoBebida) {
-		this.tamanoBebida = tamanoBebida;
+		this.gaseosa = tamanoBebida;
 	}
 	public int getKetchup() {
-		return ketchup;
+		return KETCHUPS;
 	}
 	public void setKetchup(int ketchup) {
-		this.ketchup = ketchup;
+		this.KETCHUPS = ketchup;
 	}
 	public int getMayonesa() {
-		return mayonesa;
+		return MAYONESA;
 	}
 	public void setMayonesa(int mayonesa) {
-		this.mayonesa = mayonesa;
+		this.MAYONESA = mayonesa;
 	}
 	public int getMoztasa() {
-		return moztasa;
+		return MOSTAZA;
 	}
 	public void setMoztasa(int moztasa) {
-		this.moztasa = moztasa;
+		this.MOSTAZA = moztasa;
 	}
 	public int getPapas() {
-		return papas;
+		return FRENCHYS;
 	}
 	public void setPapas(int papas) {
-		this.papas = papas;
+		this.FRENCHYS = papas;
 	}
 	public int getJuegueteMujer() {
 		return juegueteMujer;
@@ -116,10 +116,10 @@ public class Hamburguesa {
 		this.HAMBURGUESAS = hamburguesas;
 	}
 	public int getQuesos() {
-		return quesos;
+		return QUESOS;
 	}
 	public void setQuesos(int quesos) {
-		this.quesos = quesos;
+		this.QUESOS = quesos;
 	}
 	public int getPanConCentenos() {
 		return panConCentenos;
@@ -140,10 +140,10 @@ public class Hamburguesa {
 		this.huevos = huevos;
 	}
 	public int getCebollas() {
-		return cebollas;
+		return CEBOLLA;
 	}
 	public void setCebollas(int cebollas) {
-		this.cebollas = cebollas;
+		this.CEBOLLA = cebollas;
 	}
 	
 

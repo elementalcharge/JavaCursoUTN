@@ -10,6 +10,7 @@ import tp2.conexion.ConexionBDMySQL;
 import tp2.controlador.StockController;
 import tp2.enumerables.Bebida;
 import tp2.interfaces.Combo;
+import tp2.modelo.utils.PropertiesUtils;
 
 public class Cajero implements Runnable{
 	public boolean EmiteTicket;
@@ -51,7 +52,7 @@ public void ingresarContacto( Contacto cliente) {
 			
 			Class.forName("com.mysql.jdbc.Driver");
 			PreparedStatement ps = (PreparedStatement) ConexionBDMySQL.conectoMysql()
-					.prepareStatement("INSERT INTO `contacto` (`NOMBRE`, `APELLIDO`, `NACIMIENTO`, `TELEFONO`, `ID`) VALUES (?, ?, ?, ?, NULL)");
+					.prepareStatement(PropertiesUtils.getInstance().getProperty("insert.contact"));
 			ps.setString(1, cliente.getNombre());
 			
 			ps.setString(2, cliente.getApellido());
@@ -83,7 +84,7 @@ public Contacto ObtenerContacto(String nombre, String apellido ) {
 			Class.forName("com.mysql.jdbc.Driver");
 		
 		PreparedStatement ps = (PreparedStatement) ConexionBDMySQL.conectoMysql()
-				.prepareStatement("SELECT * FROM `contacto` WHERE `NOMBRE`=? AND `APELLIDO`=?");
+				.prepareStatement(PropertiesUtils.getInstance().getProperty("select.contact"));
 		ps.setString(1, nombre);
 		ps.setString(2, apellido);
 		

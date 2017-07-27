@@ -6,11 +6,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import com.mysql.jdbc.Field;
+
 import tp2.conexion.ConexionBDMySQL;
 
 import tp2.modelo.EscribirOperaciones;
 import tp2.modelo.Factura;
 import tp2.modelo.Hamburguesa;
+import tp2.modelo.utils.PropertiesUtils;
 
 public class StockController {
 
@@ -24,7 +27,7 @@ public class StockController {
 	}
 	public static void ActualizarStock(Factura compra) {
  
-		System.out.println(pedidos.size());
+		//System.out.println(pedidos.size());
 		pedidos.add(compra);
 		
 		if (pedidos.size()>=almacenarcada) {
@@ -35,95 +38,42 @@ public class StockController {
 		//Metodo sin refleccion
 		try {
 		Hamburguesa consumo=compra.getOrden().consumeStock();
-		
-		PreparedStatement ps = (PreparedStatement) ConexionBDMySQL.conectoMysql()
-				.prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-		
-			ps.setInt(1, consumo.getHamburguesas());
-		
-		
-		ps.setString(2, "HAMBURGUESAS");
-		ps.executeUpdate();
-		//2
-		 ps = (PreparedStatement) ConexionBDMySQL.conectoMysql()
-				.prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-		
-			ps.setInt(1, consumo.getPapas());
-		
-		
-		ps.setString(2, "FRENCHYS");
-		ps.executeUpdate();
-		
-		//3
-		
-		 ps = (PreparedStatement) ConexionBDMySQL.conectoMysql()
-					.prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			
-				ps.setInt(1, consumo.getQuesos());
-			
-			
-			ps.setString(2, "QUESOS");
-			ps.executeUpdate();
-		/* DESCOMENTAR DESPUES DE PROBAR	
-			//4
-			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql().prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			ps.setInt(1, consumo.getCebollas());
-			ps.setString(2, "CEBOLLA");
-			ps.executeUpdate();
-			//5
-			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql().prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			ps.setInt(1, consumo.getJugueteVaron());
-			ps.setString(2, "jugueteVaron");
-			ps.executeUpdate();
-			//6
-			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql().prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			ps.setInt(1, consumo.getKetchup());
-			ps.setString(2, "KETCHUPS");
-			ps.executeUpdate();
-			//7
-			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql().prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			ps.setInt(1, consumo.getMayonesa());
-			ps.setString(2, "MAYONESA");
-			ps.executeUpdate();
-			//8
-			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql().prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			ps.setInt(1, consumo.getMoztasa());
-			ps.setString(2, "MOSTAZA");
-			ps.executeUpdate();
-			//9
-			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql().prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			ps.setInt(1, consumo.getPanConCentenos());
-			ps.setString(2, "panConCentenos");
-			ps.executeUpdate();
-			//10
-			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql().prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			ps.setInt(1, consumo.getPanSinCentenos());
-			ps.setString(2, "panSinCentenos");
-			ps.executeUpdate();
-			//11
-			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql().prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			ps.setInt(1, consumo.getHuevos());
-			ps.setString(2, "huevos");
-			ps.executeUpdate();
-			//12
-			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql().prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			ps.setInt(1, consumo.getJuegueteMujer());
-			ps.setString(2, "juegueteMujer");
-			ps.executeUpdate();
-			//13
-			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql().prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			ps.setInt(1, consumo.getGinis());
-			ps.setString(2, "ginis");
-			ps.executeUpdate();
-			//14
-			if(consumo.getTamanoBebida()>12){
-			
-			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql().prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-			ps.setInt(1, consumo.getTamanoBebida()/12);
-			ps.setString(2, "gaseosa");
-			ps.executeUpdate();
+		Object objeto =consumo;
+		Class<?> clase = objeto.getClass();
+		java.lang.reflect.Field campo = null;
+		PreparedStatement psnombreDelCampo = (PreparedStatement) ConexionBDMySQL.conectoMysql()
+				.prepareStatement(PropertiesUtils.getInstance().getProperty("select.stock.all"));
+		ResultSet result= psnombreDelCampo.executeQuery();
+		while (result.next()) {
+			try {
+				
+				
+				campo=clase.getDeclaredField(result.getString("ITEM"));
+				campo.setAccessible(true);
+				int valueOfAttribute = (int) campo.get(objeto);
+				PreparedStatement ps = (PreparedStatement) ConexionBDMySQL.conectoMysql()
+						.prepareStatement(PropertiesUtils.getInstance().getProperty("update.stock.consume"));
+				
+				ps.setInt(1, valueOfAttribute);
+				ps.setString(2, result.getString("ITEM"));
+				
+				ps.executeUpdate();
+			} catch (NoSuchFieldException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SecurityException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalArgumentException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
-			*/
+			
+		}
+		
 			revisarAlerta();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -134,45 +84,16 @@ public class StockController {
 				e.printStackTrace();
 			}
 		
-		/*try {
-			Hamburguesa consumo=compra.getOrden().consumeStock();
-			Class.forName("com.mysql.jdbc.Driver");
-			for (Field item : Hamburguesa.class.getFields()) {
-				item.setAccessible(true);
-				if (!item.getName().equals("HAMBURGUESAS"))
-					query += item.getName() + ",";
-			//Actualizar(consumo, combo.getName());
-			}
-		}
-		catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} */
+		
 	}
 	public static final ArrayList<Factura> getReporte() {
 		return reporte;
 	}
-	/*
-	private void Actualizar(Hamburguesa consumo, String name){
-		try {
-			
-				PreparedStatement ps = (PreparedStatement) ConexionBDMySQL.conectoMysql()
-						.prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD-? WHERE `ITEM`=?");
-				ps.setInt(1, consumo.getHamburguesas());
-				
-				ps.setString(2, name);
-				ps.executeUpdate();
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		
-		
-	}*/
+	
 	private static void revisarAlerta(){
 		try {
 			PreparedStatement ps = (PreparedStatement) ConexionBDMySQL.conectoMysql()
-					.prepareStatement("SELECT * FROM `Stock`");
+					.prepareStatement(PropertiesUtils.getInstance().getProperty("select.stock.all"));
 			ResultSet rs= ps.executeQuery();
 			while (rs.next()) {
 				if (rs.getInt("cantidad")<30) {
@@ -195,7 +116,7 @@ public class StockController {
 		PreparedStatement ps;
 		try {
 			ps = (PreparedStatement) ConexionBDMySQL.conectoMysql()
-					.prepareStatement("UPDATE `Stock` SET `CANTIDAD`=CANTIDAD+? WHERE `ITEM`=?");
+					.prepareStatement(PropertiesUtils.getInstance().getProperty("update.stock.restock"));
 			ps.setInt(1, 30);
 			
 			ps.setString(2, ingrediente);
